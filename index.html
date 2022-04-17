@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Kyle Bort's Portfolio</title>
 </head>
 
 
 
 <body>
-    <!-- Logo and Nav -->
+    <!-- Nav -->
     <header>
-        <h1><a href="/">Kyle Bort</a></h1>
+        <h1>Kyle Bort</h1>
         <nav>
             <ul>
                 <li>
@@ -38,7 +39,7 @@
 
 
     <!-- Hero/Jumbotron -->
-    <section>
+    <section class="hero-jumbotron">
         <h2>Portfolio</h2>
     </section>
 
@@ -46,55 +47,78 @@
     <!-- Content -->
     <main>
         <!-- about me -->
-        <section>
+        <section id="about-me" class="portfolio-section">
             <h2>About Me</h2>
-            <div>
+            <article>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus placeat fuga voluptates necessitatibus eaque tenetur vel expedita architecto veniam recusandae culpa cupiditate natus at quisquam quo sit, commodi quos? Maxime.
-            </div>
+            </article>
         </section>
 
         <!-- portfolio container -->
-        <section>
-            <div>
-                <h2>Work</h2>
-            </div>
-            <div>
-                <h3>Surf Report</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div>
-                <h3>LED Wall</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div>
-                <h3>Calculator</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div>
-                <h3>Pastel Puzzels</h3>
-                <p>MERN Stack</p>
-            </div>
-            <div>
-                <h3>Run Buddy</h3>
-                <p>HTML/CSS</p>
-            </div>
+        <section id="work" class="portfolio-section">
+            <h2>Work</h2>
+            <article>
+                <aside id="surf">
+                    <div>
+                        <h3>Surf Report</h3>
+                        <p>MERN Stack</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div id="led">
+                        <div>
+                            <h3>LED Wall</h3>
+                            <p>Node/IoT</p>
+                        </div>
+                    </div>
+                    <div id="calc">
+                        <div>
+                            <h3>Calculator</h3>
+                            <p>React/JavaScript/CSS</p>
+                        </div>
+                    </div>
+                    <div id="past">
+                        <div>
+                            <h3>Pastel Puzzels</h3>
+                            <p>MERN Stack</p>
+                        </div>
+                    </div>
+                    <div id="run-buddy">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </div>
+                </aside>
+            </article>
         </section>
 
         <!-- contact info -->
-        <section>
-            <div>
-                <h2>Contact Me</h2>
-            </div>
+        <section id="contact-me" class="portfolio-section">
+            <h2>Contact Me</h2>
             <address>
-                <a href="tel:+15174883919" target="_blank">
-                    517.488.3919
-                </a>
-                <a href="mailto:bortkyle18@gmail.com" target="_blank">
-                    bortkyle18@gmail.com
-                </a>
-                <a href="https://github.com/bortkyle18" target="_blank">
-                    GitHub
-                </a>
+                <div>
+                    <a href="tel:+15174883919" target="_blank">
+                        517.488.3919
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:bortkyle18@gmail.com" target="_blank">
+                        bortkyle18@gmail.com
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/bortkyle18" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+            </address>
+        </section>
+
+        <section id="resume" class="portfolio-section">
+            <h2>Resume</h2>
+            <address>   
+                <a href="https://www.linkedin.com/in/kyle-bort-909b6a230/" target="_blank">Linked<span class="linkedin">in Profile/Resume</span></a>
             </address>
         </section>
     </main>
