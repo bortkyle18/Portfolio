@@ -125,6 +125,12 @@ header nav ul {
     font-size: 30px;
 }
 
+#aboutInfo {
+    font-size: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 /* Work links */
 .portfolio-section article {
@@ -327,6 +333,10 @@ p {
         width: 100%;
     }
 
+    #aboutInfo {
+        font-size: 25px;
+    }
+
     #media-change {
         justify-content: center;
     }
@@ -377,6 +387,10 @@ p {
         display: block;
         text-align: center;
         font-size: 5vw;
+    }
+
+    #aboutInfo {
+        font-size: 15px;
     }
 
     #contact-me div{
