@@ -344,6 +344,33 @@ p {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 600px) {
+    #firstName, #lastName {
+        font-size: 20vw;
+        margin: 0;
+        padding: 2vw;
+        margin: auto;
+    }
+
+    #names {
+        display: flex;
+    }
+
+    .hero-jumbotron br {
+        display: none;
+    }
+
+    #memoji {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .hero-jumbotron {
+        display: block;
+    }
+
     h1 {
         font-size: 20vw;
     }
