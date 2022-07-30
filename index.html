@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/memojismile.png">
     <title>Kyle Bort's Portfolio</title>
 </head>
 
@@ -13,39 +14,43 @@
 
 <body>
     <!-- Nav -->
-    <header>
-        <h1>Kyle Bort</h1>
+    <header id="fixedNavWrapper">
         <nav>
             <ul>
-                <li>
+                <li class="about-me">
                     <!-- About Me -->
                     <a href="#about-me">About Me</a>
                 </li>
                 <!-- Work -->
-                <li>
+                <li class="work">
                     <a href="#work">Work</a>
                 </li>
                 <!-- Contact Me -->
-                <li>
+                <li class="contact-me">
                     <a href="#contact-me">Contact Me</a>
                 </li>
                 <!-- Resume -->
-                <li>
+                <li class="resume">
                     <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
-
-
+    
     <!-- Hero/Jumbotron -->
     <section class="hero-jumbotron">
-        <h2>Portfolio</h2>
-    </section>
+        <div id="names">
+            <h1 id="firstName">Kyle</h1>
+            <br>
+            <h1 id="lastName">Bort</h1>
+        </div>
+            <img id="memoji" src="./assets/images/memojilaptop.png" alt="Kyle Bort Memoji">
+        </div>
+        </section>
 
 
     <!-- Content -->
-    <main>
+    <main class="main">
         <!-- about me -->
         <section id="about-me" class="portfolio-section">
             <h2>About Me</h2>
@@ -120,5 +125,28 @@
             </address>
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('li.about-me').click(function(){
+            positionabout = $('#about-me').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            $("html, body").animate({scrollTop:positionabout}, '500', 'swing');
+        })
+
+        $('li.work').click(function(){
+            positionport = $('#work').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            $("html, body").animate({scrollTop:positionport}, '500', 'swing');
+        })
+
+        $('li.contact-me').click(function(){
+            positionport = $('#contact-me').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            $("html, body").animate({scrollTop:positionport}, '500', 'swing');
+        })
+
+        $('li.resume').click(function(){
+            positionport = $('#resume').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            $("html, body").animate({scrollTop:positionport}, '500', 'swing');
+        })
+    </script>
 </body>
 </html>

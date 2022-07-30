@@ -5,50 +5,48 @@
 }
 
 :root {
-    --primary-color: rgb(75, 190, 200);
-    --secondary-color: rgb(55, 65, 80);
+    --primary-color: #3D4C41;
+    --secondary-color: #E6E6E6;
+    --tertiary-color: #999999;
 }
 
 body {
+    background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Avenir', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 
 /* Nav */
 header {
-    background-color: var(--secondary-color);
-    padding: 20px 20px 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header h1 {
-    padding: 2px 20px 2px 100px;
-    font-size: 80px;
-    margin: 5px;
     background-color: var(--primary-color);
-    margin: 0;
-    border-radius: 2px;
+    opacity: .90;
+    padding: 15px 0 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
 header a {
     text-decoration: none;
-    color: var(--primary-color);
-    margin: 0 10px;
+    color: var(--secondary-color);
+    margin: 0 2vw;
     padding: 10px 15px;
     font-weight: 400;
-    font-size: 25px;
-    border-bottom: 3px solid var(--primary-color);
+    font-size: 2vw;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 header a:hover {
     font-weight: 400;
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 2px;
     box-shadow: 0 0 2px black;
 }
@@ -62,25 +60,41 @@ header nav ul {
 }
 
 
-/* Hero/Jumbotron */
-.hero-jumbotron {
-    background-image: url(../images/02-hero-bg.jpg);
-    background-color: rgba(45, 146, 188, 0.7);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
-    height: 250px;
+/* Me  */
+#memoji {
+    height: 35vw;
+    width: 35vw;
+    background-color: var(--tertiary-color);
+    border-radius: 40% 40% 0% 0%;
+    margin: 0 0 0 20%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
-.hero-jumbotron h2 {
-    background-color: var(--primary-color);
-    margin: 20px 50px;
-    padding: 5px;
-    font-size: 60px;
+#firstName {
+    font-size: 13vw;
+    margin: 0 0 0 15%;
+    text-shadow: 0 1px 0 var(--tertiary-color), 
+                0 2px 0 rgba(0,0,0),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+}
+
+#lastName {
+    font-size: 13vw;
+    margin: 0 0 0 45%;
+    text-shadow: 0 1px 0 var(--tertiary-color), 
+                0 2px 0 rgba(0,0,0),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+}
+
+.hero-jumbotron {
+    display: flex;
+    width: 100%;
+    padding: 5vw;
+    color: var(--tertiary-color);
 }
 
 
@@ -123,10 +137,11 @@ header nav ul {
 h3, p {
     display: flex;
     font-size: 25px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     align-items: center;
     justify-content: flex-start;
     padding: 5px;
+    color: var(--primary-color);
 }
 
 p {
@@ -138,10 +153,10 @@ p {
     background-position: center;
     background-size: cover;
     margin: 1% 0;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--secondary-color);
     width: 100%;
     height: 400px;
-    background-color: rgba(45, 146, 188, 0.7);
+    background-color: var(--tertiary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
@@ -156,10 +171,10 @@ p {
     background-position: center;
     background-size: cover;
     margin: 1% 0;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--secondary-color);
     width: 49%;
     height: 200px;
-    background-color: rgba(45, 146, 188, 0.7);
+    background-color: var(--tertiary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
@@ -174,10 +189,10 @@ p {
     background-position: center;
     background-size: cover;
     margin: 1% 0;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--secondary-color);
     width: 49%;
     height: 200px;
-    background-color: rgba(45, 146, 188, 0.7);
+    background-color: var(--tertiary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
@@ -192,10 +207,10 @@ p {
     background-position: center;
     background-size: cover;
     margin: 1% 0;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--secondary-color);
     width: 49%;
     height: 200px;
-    background-color: rgba(45, 146, 188, 0.7);
+    background-color: var(--tertiary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
@@ -210,10 +225,10 @@ p {
     background-position: center;
     background-size: cover;
     margin: 1% 0;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--secondary-color);
     width: 49%;
     height: 200px;
-    background-color: rgba(45, 146, 188, 0.7);
+    background-color: var(--tertiary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
@@ -226,8 +241,6 @@ p {
 #surf:hover, #led:hover, #calc:hover, #past:hover, #run-buddy:hover {
     background-color: transparent;
 }
-
-
 
 /* Contact Sections */
 .portfolio-section address {
@@ -251,42 +264,30 @@ p {
 
   /* MEDIA QUERY */
 @media screen and (max-width: 1100px) {
-    header {
-        margin: 0;
-        padding: 0;
-        justify-content: center;
+    #firstName{
+        font-size: 12vw;
     }
 
-    header h1 {
-        font-size: 10vw;
-        padding: 0 0 2vw 0;
-        width: 100%;
+    #lastName{
+        font-size: 12vw;
+    }
+
+    header {
+        justify-content: center;
         text-align: center;
+        padding: 20px 0 30px 0;
     }
 
     header a {
-        font-size: 4vw;
-        padding: 0;
-        margin: 1.5vw;
+        font-size: 3vw;
     }
 
     header nav ul {
-        width: 100%;
-        padding: 20px;
         justify-content: center;
     }
 
     header nav ul li {
         padding: 5px 13px;
-    }
-
-    .hero-jumbotron {
-        justify-content: center;
-        height: 25vw;
-    }
-    
-    .hero-jumbotron h2 {
-        font-size: 7vw;
     }
 
     .portfolio-section {
@@ -332,13 +333,17 @@ p {
 }
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-    header h1 {
+@media screen and (max-width: 600px) {
+    h1 {
         font-size: 20vw;
+    }
+
+    header {
+        padding: 8px 0 20px 0;
     }
     
     header a {
-        font-size: 7.5vw;
+        font-size: 3vw;
     }
     
     header nav ul {
@@ -346,15 +351,7 @@ p {
     }
     
     header nav ul li {
-        padding: 1vw;
-    }
-    
-    .hero-jumbotron {
-        height: 30vw;
-    }
-        
-    .hero-jumbotron h2 {
-        font-size: 9vw;
+        padding: 0;
     }
     
     .portfolio-section h2 {
