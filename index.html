@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/images/memojismile.png">
     <title>Kyle Bort's Portfolio</title>
@@ -39,21 +40,22 @@
     
     <!-- Hero/Jumbotron -->
     <section class="hero-jumbotron">
-        <div id="names">
-            <h1 id="firstName">Kyle</h1>
+        <div id="intro">
+            <h1 id="hi">Hello, my name is</h1>
             <br>
-            <h1 id="lastName">Bort</h1>
+            <h1 id="name">Kyle Bort</h1>
         </div>
             <img id="memoji" src="./assets/images/memojilaptop.png" alt="Kyle Bort Memoji">
         </div>
-        </section>
+    </section>
 
+    <div style="height: 10vw; width: 100%;"></div>
 
     <!-- Content -->
     <main class="main">
         <!-- about me -->
-        <section id="about-me" class="portfolio-section">
-            <h2>About Me</h2>
+        <section id="about-me" class="portfolio-section reveal">
+            <h2 id="about">About Me</h2>
             <article id="aboutInfo">
                 Full stack web developer utilizing a psychology and philosophy background to create a more intuitive user experience while maintaining a well factored code base. Soon to earn a certificate in full stack development from Michigan State Coding Bootcamp, with newly developed skills in JavaScript, Node.js, React.js, REST APIs, and responsive web design. 
                 <br>
@@ -130,6 +132,8 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./assets/js/scroll.js"></script>
     <script>
         $('li.about-me').click(function(){
             positionabout = $('#about-me').offset().top - (2.21 * $('#fixedNavWrapper').height());

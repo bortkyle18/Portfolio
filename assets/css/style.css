@@ -5,23 +5,27 @@
 }
 
 :root {
-    --primary-color: #3D4C41;
-    --secondary-color: #E6E6E6;
-    --tertiary-color: #999999;
+    --primary-color: #5b7065;
+    --secondary-color: #c9d1c8;
+    --tertiary-color: #04202c;
+    --quaternary-color: #304040;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: 'Avenir', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 1px 0 var(--tertiary-color), 
+                0 2px 0 rgba(0,0,0),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
 }
 
 
 
 /* Nav */
 header {
-    background-color: var(--primary-color);
-    opacity: .90;
     padding: 15px 0 25px 0;
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +34,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
 header a {
@@ -45,13 +48,21 @@ header a {
 
 header a:hover {
     font-weight: 400;
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: var(--quaternary-color);
+    color: var(--secondary-color);
+    border-bottom: none;
     border-radius: 2px;
     box-shadow: 0 0 2px black;
+    box-shadow: 0 1px 0 rgba(0,0,0), 
+                0 2px 0 rgba(0,0,0),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+    text-shadow: none;
 }
 
 header nav ul {
+    opacity: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,73 +73,62 @@ header nav ul {
 
 /* Me  */
 #memoji {
-    height: 35vw;
-    width: 35vw;
-    background-color: var(--tertiary-color);
-    border-radius: 40% 40% 0% 0%;
-    margin: 0 0 0 20%;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    height: 45vw;
+    width: 45vw;
 }
 
-#firstName {
-    font-size: 13vw;
-    margin: 0 0 0 15%;
-    text-shadow: 0 1px 0 var(--tertiary-color), 
-                0 2px 0 rgba(0,0,0),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+#hi {
+    margin: 0;
+    font-size: 5vw;
+    text-align: start;
 }
 
-#lastName {
-    font-size: 13vw;
-    margin: 0 0 0 45%;
-    text-shadow: 0 1px 0 var(--tertiary-color), 
-                0 2px 0 rgba(0,0,0),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+#name {
+    font-size: 7vw;
+    margin: 0;
+    text-align: end;
 }
 
 .hero-jumbotron {
     display: flex;
     width: 100%;
-    padding: 5vw;
-    color: var(--tertiary-color);
+    align-items: center;
+    justify-content: center;
 }
 
 
-
-/* Content */
-.portfolio-section {
-    margin: 15px;
-    display: flex;
+/* Scroll */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
 }
 
-.portfolio-section h2 {
-    display: flex;
-    padding: 0px 20px;
-    width: 25%;
-    font-size: 40px;
-    margin: 5px;
-    text-align: right;
-    align-items: flex-start;
-    justify-content: flex-end;
-    border-right: 2px solid var(--secondary-color);
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.portfolio-section article {
-    display: inline-block;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: 0 50px;
-    font-size: 30px;
+
+/* About Me */
+#about {
+    font-size: 6vw;
+    padding: 0 0 0 5vw;
 }
 
 #aboutInfo {
-    font-size: 30px;
+    margin: 0 0 2vw 2vw;
+    font-size: 1.75vw;
     text-align: justify;
-    text-justify: inter-word;
+    padding: 3vw;
+    width:70vw;
+    height: 45vw;
+    background-color: var(--quaternary-color);
+    opacity: 0.6;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 5%;
+    color: var(--secondary-color);
 }
 
 
