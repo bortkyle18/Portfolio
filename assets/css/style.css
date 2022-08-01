@@ -40,17 +40,17 @@ nav {
     margin: 0;
     padding: 2vw 0 1vw 0;
     background-color: var(--quaternary-color);
-    border-radius: 0 0 2vw 2vw;
+    border-radius: 1vw 1vw 2vw 2vw;
     opacity: .7;
 }
 
 header a {
     text-decoration: none;
     color: var(--tertiary-color);
-    margin: 0 1vw;
+    margin: 0 2vw;
     padding: 1vw 1.5vw;
     font-weight: 400;
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 nav:hover {
@@ -77,6 +77,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 
@@ -91,25 +92,23 @@ header nav ul {
 
 .hero-jumbotron div {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 #memoji {
-    height: 55vw;
-    width: 55vw;
+    height: 90vw;
+    width: 90vw;
 }
 
 #hi {
-    margin: 0;
-    font-size: 5vw;
+    font-size: 11vw;
 }
 
 #name {
-    font-size: 7vw;
-    margin: 0;
+    font-size: 14vw;
     text-align: center;
-    padding-left: 2vw;
 }
 
 
@@ -117,17 +116,32 @@ header nav ul {
 .scroll {
     display: flex;
     justify-content: center;
+    padding: 2vw 0;
 }
 
 .scroll1 {
     justify-content: start;
-    padding-left: 22vw;
+    padding-top: 8vw;
+    padding-left: 17vw;
     margin-bottom: 0;
+}
+
+.scroll1 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 2vw;
+    color: var(--tertiary-color);
+}
+
+.scroll1 h2 {
+    font-size: 6vw;
 }
 
 .scroll3 {
     justify-content: end;
-    padding-right: 31vw;
+    padding-right: 28vw;
 }
 
 #scroll-down {
@@ -162,22 +176,22 @@ header nav ul {
 
 /* About Me */
 .portfolio-section {
-    margin-top: 10vw;
+    margin-top: 20vw;
 }
 
 #about {
-    font-size: 6vw;
-    padding: 0 0 0 13vw;
+    font-size: 9vw;
+    padding: 0 0 0 8vw;
     color: var(--tertiary-color);
 }
 
 #aboutInfo {
     margin: 0 0 2vw 2vw;
-    font-size: 1.15vw;
+    font-size: 4vw;
     text-align: justify;
     padding: 2vw 3vw;
-    width: 50vw;
-    height: 30vw;
+    width: 85vw;
+    height: 160vw;
     background-color: var(--quaternary-color);
     opacity: 0.6;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -199,7 +213,7 @@ header nav ul {
 }
 
 #work h2, #contact-me h2, #resume h2 {
-    font-size: 7vw;
+    font-size: 10vw;
     margin: 0;
 }
 
@@ -239,8 +253,8 @@ header nav ul {
     background-position: top;
     background-size: cover;
     margin: 2vw;
-    width: 40vw;
-    height: 20vw;
+    width: 80vw;
+    height: 30vw;
     background-color: var(--quaternary-color);
     background-blend-mode: multiply;
     display: flex;
@@ -293,17 +307,18 @@ header nav ul {
 /* Contact Me */
 #contact-me {
     text-align: end;
-    padding-right: 18vw;
+    padding-right: 8vw;
+    margin-top: 10vw;
 }
 
 .contact {
-    padding: 3vw 0;
+    padding: 4vw 0;
 }
 
 .contactInfo {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 2.5vw;
+    font-size: 6vw;
 }
 
 .contactInfo:hover {
@@ -311,8 +326,8 @@ header nav ul {
 }
 
 .contactInfo img {
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
+    height: 8vw;
     filter: invert(92%) 
             sepia(10%) 
             saturate(6197%) 
@@ -326,19 +341,11 @@ header nav ul {
             drop-shadow(0 25px 20px rgba(0,0,0,.15));
 }
 
-#phone {
-    padding-right: 8vw;
-}
-
-#email {
-    padding-right: 2vw;
-}
-
-#git {
-    padding-right: 12vw;
-}
-
 /* Resume */
+#resume {
+    margin-top: 10vw;
+}
+
 #resume address {
     display: flex;
     flex-wrap: wrap;
@@ -351,7 +358,7 @@ header nav ul {
     background-size: cover;
     margin: 2vw;
     width: 85vw;
-    height: 50vw;
+    height: 160vw;
     background-color: var(--quaternary-color);
     background-blend-mode: multiply;
     display: flex;
