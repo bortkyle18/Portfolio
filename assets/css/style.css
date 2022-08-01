@@ -7,7 +7,7 @@
 :root {
     --primary-color: #5b7065;
     --secondary-color: #c9d1c8;
-    --tertiary-color: #04202c;
+    --tertiary-color: #B79E4F;
     --quaternary-color: #304040;
 }
 
@@ -15,50 +15,59 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: 'Avenir', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 0 1px 0 var(--tertiary-color), 
+    text-shadow: 0 1px 0 rgba(0,0,0), 
                 0 2px 0 rgba(0,0,0),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+                0 10px 10px rgba(0,0,0,.25),
+                0 15px 10px rgba(0,0,0,.2),
+                0 25px 20px rgba(0,0,0,.15);
 }
 
 
 
 /* Nav */
 header {
-    padding: 15px 0 25px 0;
+    padding: 0 0 2vw 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 
+nav {
+    margin: 0;
+    padding: 2vw 0 1vw 0;
+    background-color: var(--quaternary-color);
+    border-radius: 0 0 2vw 2vw;
+    opacity: .7;
+}
+
 header a {
     text-decoration: none;
-    color: var(--secondary-color);
-    margin: 0 2vw;
-    padding: 10px 15px;
+    color: var(--tertiary-color);
+    margin: 0 1vw;
+    padding: 1vw 1.5vw;
     font-weight: 400;
-    font-size: 2vw;
-    border-bottom: 3px solid var(--secondary-color);
+    font-size: 3.5vw;
+}
+
+nav:hover {
+    opacity: .95;
 }
 
 header a:hover {
-    font-weight: 400;
-    background: var(--quaternary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     border-bottom: none;
-    border-radius: 2px;
-    box-shadow: 0 0 2px black;
+    border-radius: 1vw;
     box-shadow: 0 1px 0 rgba(0,0,0), 
-                0 2px 0 rgba(0,0,0),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+                0 5px 0 rgba(0,0,0),
+                0 10px 10px rgba(0,0,0,.25),
+                0 15px 10px rgba(0,0,0,.2),
+                0 25px 20px rgba(0,0,0,.15);
     text-shadow: none;
+    border: 2px solid var(--tertiary-color);
 }
 
 header nav ul {
@@ -72,32 +81,72 @@ header nav ul {
 
 
 /* Me  */
+.hero-jumbotron {
+    display: block;
+    width: 100%;
+    color: var(--tertiary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-jumbotron div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #memoji {
-    height: 45vw;
-    width: 45vw;
+    height: 55vw;
+    width: 55vw;
 }
 
 #hi {
     margin: 0;
     font-size: 5vw;
-    text-align: start;
 }
 
 #name {
     font-size: 7vw;
     margin: 0;
-    text-align: end;
-}
-
-.hero-jumbotron {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-left: 2vw;
 }
 
 
 /* Scroll */
+.scroll {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll1 {
+    justify-content: start;
+    padding-left: 22vw;
+    margin-bottom: 0;
+}
+
+.scroll3 {
+    justify-content: end;
+    padding-right: 31vw;
+}
+
+#scroll-down {
+    margin-top: 10vw;
+    width: 10vw;
+    height: 10vw;
+    filter: invert(92%) 
+            sepia(10%) 
+            saturate(6197%) 
+            hue-rotate(331deg) 
+            brightness(88%) 
+            contrast(58%) 
+            drop-shadow(0 1px 0 rgba(0,0,0)) 
+            drop-shadow(0 2px 0 rgba(0,0,0))
+            drop-shadow(0 10px 10px rgba(0,0,0,.25))
+            drop-shadow(0 15px 10px rgba(0,0,0,.2))
+            drop-shadow(0 25px 20px rgba(0,0,0,.15));
+}
+
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -112,315 +161,250 @@ header nav ul {
 
 
 /* About Me */
+.portfolio-section {
+    margin-top: 10vw;
+}
+
 #about {
     font-size: 6vw;
-    padding: 0 0 0 5vw;
+    padding: 0 0 0 13vw;
+    color: var(--tertiary-color);
 }
 
 #aboutInfo {
     margin: 0 0 2vw 2vw;
-    font-size: 1.75vw;
+    font-size: 1.15vw;
     text-align: justify;
-    padding: 3vw;
-    width:70vw;
-    height: 45vw;
+    padding: 2vw 3vw;
+    width: 50vw;
+    height: 30vw;
     background-color: var(--quaternary-color);
     opacity: 0.6;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-radius: 5%;
-    color: var(--secondary-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 5vw;
 }
 
 
-/* Work links */
-.portfolio-section article {
+/* Work */
+#work, #contact-me, #resume{
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+#work h2, #contact-me h2, #resume h2 {
+    font-size: 7vw;
+    margin: 0;
+}
+
+.sample {
+    height: 30vw;
+    width: 40vw;
+}
+
+.sampleText {
+    text-align: center;
+    padding: 5vw 0;
+}
+
+#work article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
 }
 
-h3, p {
-    display: flex;
-    font-size: 25px;
-    background-color: var(--secondary-color);
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5px;
-    color: var(--primary-color);
+.sampleText h3 {
+    font-size: 3vw;
+    padding: 1vw;
+    color: var(--tertiary-color);
+    width: 30vw;
+    height: 5vw;
+    border-radius: 2vw 2vw 0 0;
 }
 
-p {
-    font-size: 15px;
+.sampleText p {
+    font-size: 2vw;
+    width: 30vw;
+    height: 4vw;
+    border-radius: 0 0 2vw 2vw;
 }
 
-#surf {
-    background-image: url(../images/02-portfolio-4.jpg);background-size: cover;
-    background-position: center;
+#travelot, #note-taker, #e-commerce, #e-commerce, #employee-tracker, #run-buddy {
+    background-position: top;
     background-size: cover;
-    margin: 1% 0;
-    border: 5px solid var(--secondary-color);
-    width: 100%;
-    height: 400px;
-    background-color: var(--tertiary-color);
+    margin: 2vw;
+    width: 40vw;
+    height: 20vw;
+    background-color: var(--quaternary-color);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     color: var(--secondary-color);
+    border-radius: 5vw;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#led {
-    background-image: url(../images/02-portfolio-1.jpg);background-size: cover;
-    background-position: center;
-    background-size: cover;
-    margin: 1% 0;
-    border: 5px solid var(--secondary-color);
-    width: 49%;
-    height: 200px;
-    background-color: var(--tertiary-color);
-    background-blend-mode: multiply;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-#calc {
-    background-image: url(../images/02-portfolio-2.jpg);background-size: cover;
-    background-position: center;
-    background-size: cover;
-    margin: 1% 0;
-    border: 5px solid var(--secondary-color);
-    width: 49%;
-    height: 200px;
-    background-color: var(--tertiary-color);
-    background-blend-mode: multiply;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-#past {
-    background-image: url(../images/02-portfolio-3.jpg);background-size: cover;
-    background-position: center;
-    background-size: cover;
-    margin: 1% 0;
-    border: 5px solid var(--secondary-color);
-    width: 49%;
-    height: 200px;
-    background-color: var(--tertiary-color);
-    background-blend-mode: multiply;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-#run-buddy {
-    background-image: url(../images/02-run-buddy.jpg);background-size: cover;
-    background-position: center;
-    background-size: cover;
-    margin: 1% 0;
-    border: 5px solid var(--secondary-color);
-    width: 49%;
-    height: 200px;
-    background-color: var(--tertiary-color);
-    background-blend-mode: multiply;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-#surf:hover, #led:hover, #calc:hover, #past:hover, #run-buddy:hover {
+#travelot:hover, #note-taker:hover, #e-commerce:hover, #e-commerce:hover, #employee-tracker:hover, #run-buddy:hover {
     background-color: transparent;
 }
 
-/* Contact Sections */
-.portfolio-section address {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: 0 50px;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 30px;
+#travelot:hover div, #note-taker:hover div, #e-commerce:hover div, #e-commerce:hover div, #employee-tracker:hover div, #run-buddy:hover div {
+    display: none;
 }
 
-.portfolio-section address a {
+#travelot {
+    width: 80vw;
+    background-image: url(../images/travelot.png);
+}
+
+#note-taker {
+    background-image: url(../images/note-taker.png);
+}
+
+#e-commerce {
+    background-image: url(../images/e-commerce.png);
+}
+
+#employee-tracker {
+    background-image: url(../images/employee-tracker.png);
+}
+
+#run-buddy {
+    background-image: url(../images/run-buddy.png);
+}
+
+
+/* Contact Me */
+#contact-me {
+    text-align: end;
+    padding-right: 18vw;
+}
+
+.contact {
+    padding: 3vw 0;
+}
+
+.contactInfo {
     text-decoration: none;
     color: var(--secondary-color);
-    border-bottom: 3px solid var(--secondary-color);
+    font-size: 2.5vw;
+}
+
+.contactInfo:hover {
+    color: var(--quaternary-color);
+}
+
+.contactInfo img {
+    width: 6vw;
+    height: 6vw;
+    filter: invert(92%) 
+            sepia(10%) 
+            saturate(6197%) 
+            hue-rotate(331deg) 
+            brightness(88%) 
+            contrast(58%) 
+            drop-shadow(0 1px 0 rgba(0,0,0)) 
+            drop-shadow(0 2px 0 rgba(0,0,0))
+            drop-shadow(0 10px 10px rgba(0,0,0,.25))
+            drop-shadow(0 15px 10px rgba(0,0,0,.2))
+            drop-shadow(0 25px 20px rgba(0,0,0,.15));
+}
+
+#phone {
+    padding-right: 8vw;
+}
+
+#email {
+    padding-right: 2vw;
+}
+
+#git {
+    padding-right: 12vw;
+}
+
+/* Resume */
+#resume address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#resumeInfo {
+    background-image: url(../images/run-buddy.png);
+    background-position: top;
+    background-size: cover;
+    margin: 2vw;
+    width: 85vw;
+    height: 50vw;
+    background-color: var(--quaternary-color);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 5vw;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#resumeInfo:hover {
+    background-color: transparent;
+}
+
+#resumeInfo:hover div {
+    display: none;
+}
+
+.linkedin {
+    margin: 0;
+    padding: 0;
+    height: 20vw;
+    width: 40vw;
+    filter: invert(92%) 
+            sepia(10%) 
+            saturate(6197%) 
+            hue-rotate(331deg) 
+            brightness(88%) 
+            contrast(58%) 
+            drop-shadow(0 1px 0 rgba(0,0,0)) 
+            drop-shadow(0 2px 0 rgba(0,0,0))
+            drop-shadow(0 10px 10px rgba(0,0,0,.25))
+            drop-shadow(0 15px 10px rgba(0,0,0,.2))
+            drop-shadow(0 25px 20px rgba(0,0,0,.15));
+}
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 600px) {
 }
 
 
 
 
-  /* MEDIA QUERY */
-@media screen and (max-width: 1100px) {
-    #firstName{
-        font-size: 12vw;
-    }
-
-    #lastName{
-        font-size: 12vw;
-    }
-
-    header {
-        justify-content: center;
-        text-align: center;
-        padding: 20px 0 30px 0;
-    }
-
-    header a {
-        font-size: 3vw;
-    }
-
-    header nav ul {
-        justify-content: center;
-    }
-
-    header nav ul li {
-        padding: 5px 13px;
-    }
-
-    .portfolio-section {
-        flex-wrap: wrap;
-    }
-
-    .portfolio-section h2 {
-        width: 100%;
-        font-size: 5vw;
-        border-right: none;
-        border-bottom: 2px solid var(--secondary-color);
-        justify-content: center;
-        padding: 0;
-    }
-
-    .portfolio-section article {
-        padding: 0;
-        font-size: 3vw;
-        width: 100%;
-    }
-
-    h3 {
-        font-size: 4vw;
-    }
-
-    p {
-        font-size: 2vw;
-    }
-
-    #surf, #calc, #led, #past, #run-buddy {
-        height: 20vw;
-        width: 100%;
-    }
-
-    .portfolio-section address {
-        font-size: 3vw;
-        width: 100%;
-    }
-
-    #aboutInfo {
-        font-size: 25px;
-    }
-
-    #media-change {
-        justify-content: center;
-    }
-}
-
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 600px) {
-    #firstName, #lastName {
-        font-size: 20vw;
-        margin: 0;
-        padding: 2vw;
-        margin: auto;
-    }
-
-    #names {
-        display: flex;
-    }
-
-    .hero-jumbotron br {
-        display: none;
-    }
-
-    #memoji {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 90vw;
-        width: 90vw;
-    }
-
-    .hero-jumbotron {
-        display: block;
-    }
-
-    h1 {
-        font-size: 20vw;
-    }
-
-    header {
-        padding: 8px 0 20px 0;
-    }
-    
-    header a {
-        font-size: 3vw;
-    }
-    
-    header nav ul {
-        justify-content: space-evenly;
-    }
-    
-    header nav ul li {
-        padding: 0;
-    }
-    
-    .portfolio-section h2 {
-        font-size: 7vw;
-    }
-    
-    .portfolio-section article {
-        margin: 0;
-        font-size: 5vw;
-    }
-    
-    h3 {
-        font-size: 5vw;
-        padding: 0;
-    }
-    
-    p {
-        font-size: 3vw;
-        padding: 0;
-    }
-    
-    .portfolio-section address {
-        display: block;
-        text-align: center;
-        font-size: 5vw;
-    }
-
-    #aboutInfo {
-        font-size: 15px;
-    }
-
-    #contact-me div{
-        margin: 3vw 0;
-    }
+/* MEDIA QUERY */
+@media screen and (min-width: 1100px) {
 }

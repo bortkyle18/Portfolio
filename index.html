@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/images/memojismile.png">
+    <link rel="icon" href="./assets/images/memoji-smile.png">
     <title>Kyle Bort's Portfolio</title>
 </head>
 
@@ -16,7 +16,7 @@
 <body>
     <!-- Nav -->
     <header id="fixedNavWrapper">
-        <nav>
+        <nav id="nav">
             <ul>
                 <li class="about-me">
                     <!-- About Me -->
@@ -37,63 +37,78 @@
             </ul>
         </nav>
     </header>
-    
+
+
+
     <!-- Hero/Jumbotron -->
     <section class="hero-jumbotron">
+        <div>
+            <img id="memoji" src="./assets/images/memoji-laptop.png" alt="Kyle Bort Memoji"/>
+        </div>
         <div id="intro">
             <h1 id="hi">Hello, my name is</h1>
             <br>
             <h1 id="name">Kyle Bort</h1>
         </div>
-            <img id="memoji" src="./assets/images/memojilaptop.png" alt="Kyle Bort Memoji">
-        </div>
     </section>
 
-    <div style="height: 10vw; width: 100%;"></div>
+
+    <div class="scroll scroll1">
+        <img src="./assets/images/scroll.png" alt="scroll down" id="scroll-down"/>
+    </div>
+
 
     <!-- Content -->
     <main class="main">
         <!-- about me -->
-        <section id="about-me" class="portfolio-section reveal">
-            <h2 id="about">About Me</h2>
-            <article id="aboutInfo">
-                Full stack web developer utilizing a psychology and philosophy background to create a more intuitive user experience while maintaining a well factored code base. Soon to earn a certificate in full stack development from Michigan State Coding Bootcamp, with newly developed skills in JavaScript, Node.js, React.js, REST APIs, and responsive web design. 
-                <br>
-                <br>
-                Known as a creative problem solver and passionate developer, with a focus on performance and ease of interfacing. My aim is to create an impactful, engaging, and aesthetically pleasing experience with each project I am working on. I applied aspects of UX and agile development in a recent project. I worked on a team of four to develop a travel app in which visitors could post world cities to a wishlist, log previous trips to world cities with a description of their trip, and book flights and hotels for their next trip. I’m excited to leverage my skills as part of a fast-paced, quality-driven team to build higher performing apps with more meaningful user experiences.
-            </article>
-        </section>
+        <div id="about-me">
+            <section class="portfolio-section reveal">
+                <h2 id="about">About Me</h2>
+                <article id="aboutInfo">
+                    Full stack web developer utilizing a psychology and philosophy background to create a more intuitive user experience while maintaining a well factored code base. Soon to earn a certificate in full stack development from Michigan State Coding Bootcamp, with newly developed skills in JavaScript, Node.js, React.js, REST APIs, and responsive web design. 
+                    <br>
+                    <br>
+                    Known as a creative problem solver and passionate developer, with a focus on performance and ease of interfacing. My aim is to create an impactful, engaging, and aesthetically pleasing experience with each project I am working on. I applied aspects of UX and agile development in a recent project. I worked on a team of four to develop a travel app in which visitors could post world cities to a wishlist, log previous trips to world cities with a description of their trip, and book flights and hotels for their next trip. I’m excited to leverage my skills as part of a fast-paced, quality-driven team to build higher performing apps with more meaningful user experiences.
+                </article>
+            </section>
+        </div>
+
+
+        <div class="scroll reveal scroll2">
+            <img src="./assets/images/scroll.png" alt="scroll down" id="scroll-down"/>
+        </div>
+
 
         <!-- portfolio container -->
         <section id="work" class="portfolio-section">
-            <h2>Work</h2>
-            <article>
-                    <a href="" id="surf" target="blank">
-                        <div>
-                            <h3>Surf Report</h3>
-                            <p>MERN Stack</p>
+            <h2 class="reveal">Work</h2>
+            <article class="reveal">
+                    <a href="https://obscure-atoll-09155.herokuapp.com/" class="sample" id="travelot" target="blank">
+                        <div class="sampleText">
+                            <h3>Travelot App</h3>
+                            <p>Express/MySQL/JavaScript</p>
                         </div>
                     </a>
-                    <a href="" id="led" target="blank">
-                        <div>
-                            <h3>LED Wall</h3>
-                            <p>Node/IoT</p>
+                    <a href="https://young-meadow-06036.herokuapp.com/" class="sample" id="note-taker" target="blank">
+                        <div class="sampleText">
+                            <h3>Note Taker</h3>
+                            <p>Express</p>
                         </div>
                     </a>
-                    <a href="" id="calc" target="blank">
-                        <div>
-                            <h3>Calculator</h3>
-                            <p>React/JavaScript/CSS</p>
+                    <a href="https://github.com/bortkyle18/e-commerce" class="sample" id="e-commerce" target="blank">
+                        <div class="sampleText">
+                            <h3>E-Commerce</h3>
+                            <p>SQL</p>
                         </div>
                     </a>
-                    <a href="" id="past" target="blank">
-                        <div>
-                            <h3>Pastel Puzzels</h3>
-                            <p>MERN Stack</p>
+                    <a href="https://github.com/bortkyle18/employee-tracker" class="sample" id="employee-tracker" target="blank">
+                        <div class="sampleText">
+                            <h3>Employee Tracker</h3>
+                            <p>Node/SQL</p>
                         </div>
                     </a>
-                    <a href="https://bortkyle18.github.io/run-buddy/" id="run-buddy" target="blank">
-                        <div>
+                    <a href="https://bortkyle18.github.io/run-buddy/" class="sample" id="run-buddy" target="blank">
+                        <div class="sampleText">
                             <h3>Run Buddy</h3>
                             <p>HTML/CSS</p>
                         </div>
@@ -101,57 +116,81 @@
             </article>
         </section>
 
+
+        <div class="scroll reveal scroll3">
+            <img src="./assets/images/scroll.png" alt="scroll down" id="scroll-down"/>
+        </div>
+
+
         <!-- contact info -->
-        <section id="contact-me" class="portfolio-section">
+        <section id="contact-me" class="portfolio-section reveal">
             <h2>Contact Me</h2>
             <address>
-                <div>
-                    <a href="tel:+15174883919" target="_blank">
+                <div class="contact">
+                    <a href="tel:+15174883919" target="_blank" id="phone" class="contactInfo">
+                        <img src="./assets/images/phone.png" alt="phone"/>
                         517.488.3919
                     </a>
                 </div>
-                <div>
-                    <a href="mailto:bortkyle18@gmail.com" target="_blank">
+                <div class="contact">
+                    <a href="mailto:bortkyle18@gmail.com" target="_blank" id="email" class="contactInfo">
+                        <img src="./assets/images/email.png" alt="email"/>
                         bortkyle18@gmail.com
                     </a>
                 </div>
-                <div>
-                    <a href="https://github.com/bortkyle18" target="_blank">
+                <div class="contact">
+                    <a href="https://github.com/bortkyle18" target="_blank" id="git" class="contactInfo">
+                        <img src="./assets/images/github.png" alt="github logo"/>
                         GitHub
                     </a>
                 </div>
             </address>
         </section>
 
-        <section id="resume" class="portfolio-section">
+
+        <div class="scroll reveal scroll4">
+            <img src="./assets/images/scroll.png" alt="scroll down" id="scroll-down"/>
+        </div>
+
+
+        <section id="resume" class="portfolio-section reveal">
             <h2>Resume</h2>
-            <address id="media-change">   
-                <a href="https://www.linkedin.com/in/kyle-bort-909b6a230/" target="_blank"><img src="./assets/images/Linkedin-Logo.png" alt="Linkedin Logo" width="110px" height="60px"></a>
+            <address> 
+                <a href="" class="sample" id="resumeInfo" target="blank">
+                    <div class="sampleText">
+                        <h3>Kyle Bort's Resume</h3>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/kyle-bort-909b6a230/" target="_blank">
+                    <img src="./assets/images/linkedin-logo.jpeg" alt="Linkedin Logo" class="linkedin"/>
+                </a>
             </address>
         </section>
     </main>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="./assets/js/scroll.js"></script>
     <script>
         $('li.about-me').click(function(){
-            positionabout = $('#about-me').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            positionabout = $('#about-me').offset().top - (2 * $('#fixedNavWrapper').height());
             $("html, body").animate({scrollTop:positionabout}, '500', 'swing');
         })
 
         $('li.work').click(function(){
-            positionport = $('#work').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            positionport = $('#work').offset().top - (2 * $('#fixedNavWrapper').height());
             $("html, body").animate({scrollTop:positionport}, '500', 'swing');
         })
 
         $('li.contact-me').click(function(){
-            positionport = $('#contact-me').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            positionport = $('#contact-me').offset().top - (2 * $('#fixedNavWrapper').height());
             $("html, body").animate({scrollTop:positionport}, '500', 'swing');
         })
 
         $('li.resume').click(function(){
-            positionport = $('#resume').offset().top - (2.21 * $('#fixedNavWrapper').height());
+            positionport = $('#resume').offset().top - (2 * $('#fixedNavWrapper').height());
             $("html, body").animate({scrollTop:positionport}, '500', 'swing');
         })
     </script>
