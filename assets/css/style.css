@@ -116,7 +116,8 @@ header nav ul {
 .scroll {
     display: flex;
     justify-content: center;
-    padding: 2vw 0 4vw 0;
+    padding: 2vw 0;
+    z-index: 9998;
 }
 
 .scroll1 {
@@ -191,7 +192,7 @@ header nav ul {
     text-align: justify;
     padding: 2vw 3vw;
     width: 85vw;
-    height: 165vw;
+    height: 168vw;
     background-color: var(--quaternary-color);
     opacity: 0.6;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
