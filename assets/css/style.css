@@ -235,18 +235,18 @@ header nav ul {
 }
 
 .sampleText h3 {
-    font-size: 3vw;
+    font-size: 8vw;
     padding: 1vw;
     color: var(--tertiary-color);
-    width: 30vw;
-    height: 5vw;
+    width: 70vw;
+    height: 10vw;
     border-radius: 2vw 2vw 0 0;
 }
 
 .sampleText p {
-    font-size: 2vw;
-    width: 30vw;
-    height: 4vw;
+    font-size: 5vw;
+    width: 70vw;
+    height: 8vw;
     border-radius: 0 0 2vw 2vw;
 }
 
@@ -379,6 +379,15 @@ header nav ul {
                 rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+#resume h3 {
+    height: 40vw;
+    width: 70vw;
+    font-size: 12vw;
+}
+
+#resume div {
+}
+
 #resumeInfo:hover {
     background-color: transparent;
 }
@@ -390,8 +399,8 @@ header nav ul {
 .linkedin {
     margin: 0;
     padding: 0;
-    height: 20vw;
-    width: 40vw;
+    height: 40vw;
+    width: 80vw;
     filter: invert(92%) 
             sepia(10%) 
             saturate(6197%) 
