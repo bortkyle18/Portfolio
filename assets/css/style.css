@@ -139,6 +139,12 @@ header nav ul {
     text-align: center;
 }
 
+#job {
+    color: var(--secondary-color);
+    font-size: 5vw;
+    text-align: center;
+}
+
 
 /* Scroll */
 .scroll {
@@ -422,6 +428,7 @@ header nav ul {
 
     /* Me  */
     .hero-jumbotron {
+        background-color: var(--quaternary-color);
         display: flex;
         flex-wrap: wrap;
     }
@@ -437,10 +444,18 @@ header nav ul {
 
     #hi {
         font-size: 5vw;
+        margin-bottom: 0;
     }
 
     #name {
+        margin-bottom: 0;
         font-size: 8vw;
+    }
+    
+    #job {
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
     }
 
 
@@ -557,8 +572,16 @@ header nav ul {
 /* MEDIA QUERY */
 @media screen and (min-width: 1100px) {
     /* Nav */
+    header {
+        justify-content: end;
+    }
+
     header a {
         font-size: 1.5vw;
+    }
+
+    nav {
+        border-radius: 2vw 0 0 2vw;
     }
 
 
@@ -574,6 +597,10 @@ header nav ul {
 
     #name {
         font-size: 7vw;
+    }
+    
+    #job {
+        font-size: 1.75vw;
     }
 
 
