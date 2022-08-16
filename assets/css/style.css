@@ -274,7 +274,7 @@ header nav ul {
     border-radius: 0 0 2vw 2vw;
 }
 
-#travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
+#travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
     background-position: top;
     background-size: cover;
     margin: 2vw;
@@ -299,11 +299,11 @@ header nav ul {
                 rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#travelot:hover, #note-taker:hover, #social-networking-nosql:hover, #social-networking-nosql:hover, #employee-tracker:hover, #run-buddy:hover {
+#travelot:hover, #note-taker:hover, #social-networking-nosql:hover, #employee-tracker:hover, #run-buddy:hover {
     background-color: transparent;
 }
 
-#travelot:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #run-buddy:hover div {
+#travelot:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #run-buddy:hover div {
     display: none;
 }
 
@@ -523,7 +523,7 @@ header nav ul {
         height: 5vw;
     }
 
-    #travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
+    #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
         width: 40vw;
         height: 15vw;
     }
@@ -664,7 +664,7 @@ header nav ul {
         height: 4vw;
     }
 
-    #travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
+    #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
         height: 10vw;
     }
 
