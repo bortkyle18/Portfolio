@@ -259,8 +259,8 @@ header nav ul {
 }
 
 .sampleText h3 {
-    font-size: 8vw;
-    padding: 1vw;
+    font-size: 5vw;
+    padding: 3vw;
     color: var(--tertiary-color);
     width: 70vw;
     height: 10vw;
@@ -268,13 +268,13 @@ header nav ul {
 }
 
 .sampleText p {
-    font-size: 5vw;
+    font-size: 3.5vw;
     width: 70vw;
     height: 8vw;
     border-radius: 0 0 2vw 2vw;
 }
 
-#travelot, #note-taker, #e-commerce, #e-commerce, #employee-tracker, #run-buddy {
+#travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
     background-position: top;
     background-size: cover;
     margin: 2vw;
@@ -299,11 +299,11 @@ header nav ul {
                 rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#travelot:hover, #note-taker:hover, #e-commerce:hover, #e-commerce:hover, #employee-tracker:hover, #run-buddy:hover {
+#travelot:hover, #note-taker:hover, #social-networking-nosql:hover, #social-networking-nosql:hover, #employee-tracker:hover, #run-buddy:hover {
     background-color: transparent;
 }
 
-#travelot:hover div, #note-taker:hover div, #e-commerce:hover div, #e-commerce:hover div, #employee-tracker:hover div, #run-buddy:hover div {
+#travelot:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #run-buddy:hover div {
     display: none;
 }
 
@@ -316,8 +316,8 @@ header nav ul {
     background-image: url(../images/note-taker.png);
 }
 
-#e-commerce {
-    background-image: url(../images/e-commerce.png);
+#social-networking-nosql {
+    background-image: url(../images/social-networking-nosql.png);
 }
 
 #employee-tracker {
@@ -523,7 +523,7 @@ header nav ul {
         height: 5vw;
     }
 
-    #travelot, #note-taker, #e-commerce, #e-commerce, #employee-tracker, #run-buddy {
+    #travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
         width: 40vw;
         height: 15vw;
     }
@@ -664,7 +664,7 @@ header nav ul {
         height: 4vw;
     }
 
-    #travelot, #note-taker, #e-commerce, #e-commerce, #employee-tracker, #run-buddy {
+    #travelot, #note-taker, #social-networking-nosql, #social-networking-nosql, #employee-tracker, #run-buddy {
         height: 10vw;
     }
 
