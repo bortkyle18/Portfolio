@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bb7dd3f1.css",
+    "main.js": "/portfolio/static/js/main.7d204217.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/run-buddy.png": "/portfolio/static/media/run-buddy.b3e084d510bd7a1b5191.png",
+    "static/media/resume.png": "/portfolio/static/media/resume.a37bf69e64300fe5530a.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.60c3bf5264f22188ecc2.jpg",
+    "static/media/social-networking-nosql.png": "/portfolio/static/media/social-networking-nosql.09e7e1396a3a083254e9.png",
+    "static/media/note-taker.png": "/portfolio/static/media/note-taker.d716f4ca8f48f84bb3e0.png",
+    "static/media/memoji-laptop.png": "/portfolio/static/media/memoji-laptop.2e5b005e9ac8a0c5a610.png",
+    "static/media/travelot.png": "/portfolio/static/media/travelot.109ac14aa491900dc921.png",
+    "static/media/employee-tracker.png": "/portfolio/static/media/employee-tracker.64738b1fc7d096702752.png",
+    "static/media/email.png": "/portfolio/static/media/email.b830aff3b8872979c182.png",
+    "static/media/github.png": "/portfolio/static/media/github.8e6bce7f8e7b5ad90736.png",
+    "index.html": "/portfolio/index.html",
+    "main.bb7dd3f1.css.map": "/portfolio/static/css/main.bb7dd3f1.css.map",
+    "main.7d204217.js.map": "/portfolio/static/js/main.7d204217.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb7dd3f1.css",
+    "static/js/main.7d204217.js"
+  ]
+}
