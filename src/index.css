@@ -203,12 +203,20 @@ nav a:hover {
               rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.sampleText {
+  padding: 0 2vw;
+}
+
 .sampleText a:hover {
   color: var(--primary-color);
 }
 
 .sampleText p {
-  font-size: 3.5vw;
+  font-size: 3.25vw;
+}
+
+#travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
+  font-size: 2.75vw;
 }
 
 #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
@@ -217,7 +225,6 @@ nav a:hover {
   margin-top: 6vw;
   width: 100vw;
   height: 50vw;
-  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -235,7 +242,8 @@ nav a:hover {
 }
 
 #travelot div, #note-taker div, #social-networking-nosql div, #employee-tracker div, #run-buddy div,
-#travelot p, #note-taker p, #social-networking-nosql p, #employee-tracker p, #run-buddy p  {
+#travelot p, #note-taker p, #social-networking-nosql p, #employee-tracker p, #run-buddy p,
+#travelot h5, #note-taker h5, #social-networking-nosql h5, #employee-tracker h5, #run-buddy h5  {
   display: none;
 }
 
@@ -245,7 +253,8 @@ nav a:hover {
 }
 
 #travelot:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #run-buddy:hover div,
-#travelot:hover p, #note-taker:hover p, #social-networking-nosql:hover p, #employee-tracker:hover p, #run-buddy:hover p {
+#travelot:hover p, #note-taker:hover p, #social-networking-nosql:hover p, #employee-tracker:hover p, #run-buddy:hover p,
+#travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
   display: contents;
   text-decoration: none;
 }
@@ -451,6 +460,10 @@ nav a:hover {
 
   .sampleText p {
       font-size: 1.75vw;
+  }
+
+  #travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
+    font-size: 1.25vw;
   }
 
   #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
