@@ -215,11 +215,11 @@ nav a:hover {
   font-size: 3.25vw;
 }
 
-#travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
+#book-den:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #travelot:hover h5 {
   font-size: 2.75vw;
 }
 
-#travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
+#book-den, #note-taker, #social-networking-nosql, #employee-tracker, #travelot {
   background-position: top;
   background-size: cover;
   margin-top: 6vw;
@@ -241,25 +241,25 @@ nav a:hover {
               rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#travelot div, #note-taker div, #social-networking-nosql div, #employee-tracker div, #run-buddy div,
-#travelot p, #note-taker p, #social-networking-nosql p, #employee-tracker p, #run-buddy p,
-#travelot h5, #note-taker h5, #social-networking-nosql h5, #employee-tracker h5, #run-buddy h5  {
+#book-den div, #note-taker div, #social-networking-nosql div, #employee-tracker div, #travelot div,
+#book-den p, #note-taker p, #social-networking-nosql p, #employee-tracker p, #travelot p,
+#book-den h5, #note-taker h5, #social-networking-nosql h5, #employee-tracker h5, #travelot h5  {
   display: none;
 }
 
-#travelot:hover, #note-taker:hover, #social-networking-nosql:hover, #employee-tracker:hover, #run-buddy:hover {
+#book-den:hover, #note-taker:hover, #social-networking-nosql:hover, #employee-tracker:hover, #travelot:hover {
   background-color: var(--quaternary-color);
   background-blend-mode: multiply;
 }
 
-#travelot:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #run-buddy:hover div,
-#travelot:hover p, #note-taker:hover p, #social-networking-nosql:hover p, #employee-tracker:hover p, #run-buddy:hover p,
-#travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
+#book-den:hover div, #note-taker:hover div, #social-networking-nosql:hover div, #employee-tracker:hover div, #travelot:hover div,
+#book-den:hover p, #note-taker:hover p, #social-networking-nosql:hover p, #employee-tracker:hover p, #travelot:hover p,
+#book-den:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #travelot:hover h5 {
   display: contents;
   text-decoration: none;
 }
 
-#travelot:hover a, #note-taker:hover a, #social-networking-nosql:hover a, #employee-tracker:hover a, #run-buddy:hover a {
+#book-den:hover a, #note-taker:hover a, #social-networking-nosql:hover a, #employee-tracker:hover a, #travelot:hover a {
   background-color: transparent;
   box-shadow: none;
 }
@@ -293,8 +293,8 @@ nav a:hover {
           drop-shadow(0 25px 20px rgba(0,0,0,.15));
 }
 
-#travelot {
-  background-image: url(./assets/images/travelot.png);
+#book-den {
+  background-image: url(./assets/images/book-den.png);
 }
 
 #note-taker {
@@ -309,9 +309,9 @@ nav a:hover {
   background-image: url(./assets/images/employee-tracker.png);
 }
 
-#run-buddy {
+#travelot {
   margin-bottom: 4vw;
-  background-image: url(./assets/images/run-buddy.png);
+  background-image: url(./assets/images/travelot.png);
 }
 
 
@@ -462,26 +462,26 @@ nav a:hover {
       font-size: 1.75vw;
   }
 
-  #travelot:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #run-buddy:hover h5 {
+  #book-den:hover h5, #note-taker:hover h5, #social-networking-nosql:hover h5, #employee-tracker:hover h5, #travelot:hover h5 {
     font-size: 1.25vw;
   }
 
-  #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
+  #book-den, #note-taker, #social-networking-nosql, #employee-tracker, #travelot {
       width: 47%;
       height: 30vw;
   }
 
-  #travelot {
+  #book-den {
       width: 100vw;
   }
 
   #note-taker {
-    margin-right: 4vw;
+    margin-left: 4vw;
   }
 
   #employee-tracker {
     
-    margin-right: 4vw;
+    margin-left: 4vw;
   }
 
   .gitLink img {
@@ -568,7 +568,7 @@ nav a:hover {
       font-size: 4vw;
   }
 
-  #travelot, #note-taker, #social-networking-nosql, #employee-tracker, #run-buddy {
+  #book-den, #note-taker, #social-networking-nosql, #employee-tracker, #travelot {
       height: 20vw;
   }
 
