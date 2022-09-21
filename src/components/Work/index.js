@@ -89,7 +89,7 @@ const Work = (props) => {
         <h2>In Development</h2>
         <article>
           <div className="sampleText" id="leonard-maltin-game">
-              <a href="https://github.com/bortkyle18/leonard-maltin-game" target="blank" rel="noreferrer">
+              <a href="https://theleonardmaltingame.herokuapp.com/" target="blank" rel="noreferrer">
                 The Leonard Maltin Game
               </a>
               <div>
