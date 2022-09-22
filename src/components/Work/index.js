@@ -9,6 +9,20 @@ const Work = (props) => {
       <section id="workPage" className="portfolio-section">
         <h2>Work</h2>
         <article>
+          <div className="sampleText" id="leonard-maltin-game">
+            <a href="https://theleonardmaltingame.herokuapp.com/" target="blank" rel="noreferrer">
+              The Leonard Maltin Game
+            </a>
+            <div>
+              <a href="https://github.com/bortkyle18/leonard-maltin-game" target="_blank" rel="noreferrer" className="gitLink">
+                <img src={ gitHub } alt="github logo"/>
+              </a>
+            </div>
+            <p>MERN Stack</p>
+            <br/>
+            <br/>
+            <h5>A movie trivia app in which users can test their knowledge of movies with fun public categories. Sign up to be able to create your own categories and add friends to gain access to categories they have created.</h5>
+          </div>
           <div className="sampleText" id="book-den">
             <a href="https://glacial-ridge-11514.herokuapp.com/" target="blank" rel="noreferrer">
               The Book Den
@@ -80,29 +94,6 @@ const Work = (props) => {
             <h5>A command-line application for managing a company's employees using node, inquirer, and MySQL.</h5>
           </div>
         </article>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <h2>In Development</h2>
-        <article>
-          <div className="sampleText" id="leonard-maltin-game">
-              <a href="https://theleonardmaltingame.herokuapp.com/" target="blank" rel="noreferrer">
-                The Leonard Maltin Game
-              </a>
-              <div>
-                <a href="https://github.com/bortkyle18/leonard-maltin-game" target="_blank" rel="noreferrer" className="gitLink">
-                  <img src={ gitHub } alt="github logo"/>
-                </a>
-              </div>
-              <p>MERN Stack</p>
-              <br/>
-              <br/>
-              <h5>A movie trivia app in which users can test their knowledge of movies with fun public categories. Sign up to be able to create your own categories and add friends to gain access to categories they have created.</h5>
-            </div>
-          </article>
           <br/>
           <br/>
         </section>
